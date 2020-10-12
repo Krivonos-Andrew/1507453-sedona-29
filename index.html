@@ -12,34 +12,37 @@
 
     <body class="page-body">
         <header class="main-header">
-            <nav class="main-navigation">
-                <div class="navigation_list_1">
-                    <a href="blank.html">информация</a>
-                    <a href="blank.html">фото и видео</a>
-                </div>
-                <div class="main-header-logo">
-                    <a class="logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" /></a>
-                </div>
-                <div class="navigation_list_2">
-                    <a href="blank.html">карта штата</a>
-                    <a href="blank.html">гостиницы</a>
-                </div>
-            </nav>
+            <!---->
+
+            <div class="main-header-logo">
+                <a class="logo" href="#"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" /></a>
+            </div>
+            <div class="navigation-list1 ">
+                <div class="navigation-item1"><a href="#">информация</a></div>
+                <div class="navigation-item2"><a href="#">фото и видео</a></div>
+            </div>
+
+            <div class="navigation-list2">
+                <div class="navigation-item3"><a href="#">карта штата</a></div>
+                <div class="navigation-item4"><a href="#">гостиницы</a></div>
+            </div>
+
+
         </header>
 
-        <section class="banner">
+        <div class="banner">
             <!--<h1>Городок Седона</h1> -->
             <img src="img/welcome.svg" width="456.65" height="350.88" alt="Баннер " Добро пожаловать в Седону ""/>
-        </section>
+        </div>
 
-        <section class="title">
+        <div class="title">
             <h2>
                 СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, <br /> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
             </h2>
             <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
-        </section>
+        </div>
 
-        <section class="features-blue">
+        <div class="features-blue">
             <div class="features-blue-item">
                 <h2>
                     НАСТОЯЩИЙ <br /> ГОРОДОК
@@ -52,9 +55,9 @@
             <div>
                 <img src="img/image.jpg" width="800" height="256" />
             </div>
-        </section>
+        </div>
 
-        <section class="services">
+        <div class="services">
             <ul class="services-list">
                 <li class="services-item">
                     <img src="img/icon-1.svg" />
@@ -76,9 +79,9 @@
                     </p>
                 </li>
             </ul>
-        </section>
+        </div>
 
-        <section class="features-blue two">
+        <div class="features-blue two">
             <div>
                 <img src="img/image1.jpg" width="800" height="256" />
             </div>
@@ -91,9 +94,9 @@
                     ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО <br /> ВЫ ОСМЕЛИТЕСЬ
                 </p>
             </div>
-        </section>
+        </div>
 
-        <section class="features-gray">
+        <div class="features-gray">
             <ul class="features-list">
                 <li class="features-item">
                     <h2>
@@ -123,56 +126,95 @@
                     </p>
                 </li>
             </ul>
-        </section>
+        </div>
 
-        <section class="title2">
+        <div class="title2">
+
             <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
             <p>
                 УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, <br />И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
             </p>
+
+        </div>
+        <!---->
+        <section class="hotels">
+            <div class="search-hotels">
+                <button class="search-button"> <p class="search-item">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p></button>
+                <div class="choice">
+                    <div class="date-of-arrival">
+                        <div class="date-text">
+                            <p>ДАТА ЗАЕЗДА:</p>
+                        </div>
+                        <div class="date1">
+                            <p>27 АПРЕЛЯ 2017</p>
+                            <div class="calendar"> <img src="./img/calendar.svg" alt="Календарь"></div>
+                        </div>
+                    </div>
+                    <div class="date-of-departure">
+                        <div class="date-text">
+                            <p>ДАТА ВЫЕЗДА:</p>
+                        </div>
+                        <div class="date2">
+                            <p>4 июля 2018</p>
+                            <div class="calendar"> <img src="./img/calendar.svg" alt="Календарь"></div>
+                        </div>
+                    </div>
+                    <div class="mature-children">
+                        <div class="mature">
+                            <div class="mature-children-text">
+                                <p>ВЗРОСЛЫЕ:</p>
+                            </div>
+                            <div class="counter">- 0 +</div>
+                        </div>
+                        <div class="children">
+                            <p>ДЕТИ:</p>
+                            <div class="counter">- 0 +</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="find">
+                    <button class="find-button"> <p class="find-item">НАЙТИ</p></button>
+                </div>
+            </div>
+
         </section>
 
-        <section>
-            <h3>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
-            <div>
-                <!-- Здесь будет форма для заполнения -->
-            </div>
-        </section>
-        <section class="map">
-            <figure>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52384.519357695935!2d-111.83218921830571!3d34.85541170327709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1602139940800!5m2!1sru!2sru"
-                    width="1200" height="594" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </figure>
-        </section>
+        <figure class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52384.519357695935!2d-111.83218921830571!3d34.85541170327709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1602139940800!5m2!1sru!2sru"
+                width="1200" height="594" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </figure>
+
 
         <footer class="page-footer main-footer">
-            <section class="footer-contacts">
-                <h3>#VISITSEDONA</h3>
-                <p>
-                    ТЕЛ:
-                    <a class="contacts-phone" href="tel+74956660166">+7(495)666-01-66
+            <div class="contacts">
+                <div class="contact-text">
+                    <h2>#VISITSEDONA</h2>
+                </div>
+                <a class="contacts-phone" href="tel+74956660166"> ТЕЛ: +7(495)666-01-66
             </a>
-                </p>
-            </section>
-            <section class="footer-social">
-                <ul class="social-block">
-                    <li class="social-list">
-                        <a class="social-button" href="#"><img src="img/twitter.svg" /></a>
+
+            </div>
+            <div class="social">
+                <ul class="social-menu">
+                    <li class="social-item">
+                        <a href="#" class="social-link"><img src="./img/twitter.svg" alt="Твиттер"></img>
+                        </a>
                     </li>
-                    <li class="social-list">
-                        <a class="social-button" href="#"><img src="img/fb-icon.svg" /></a>
+                    <li class="social-item">
+                        <a href="#" class="social-link"><img src="./img/fb-icon.svg" alt="Фейсбук"></img>
+                        </a>
                     </li>
-                    <li class="social-list">
-                        <a class="social-button" href="#"><img src="img/youtube.svg" /></a>
+                    <li class="social-item">
+                        <a href="#" class="social-link"><img src="./img/youtube.svg" alt="Youtube"></img>
+                        </a>
                     </li>
                 </ul>
-            </section>
-            <section class="link">
-                <img src="img/website by.svg" />
-                <p>
-                    <a class="button" href="https://htmlacademy.ru"><img src="img/shape.svg" alt="html academy" /></a>
-                </p>
-            </section>
+            </div>
+            <div class="link">
+                <img src=".//img/Website by.svg" />
+                <a class="html-logo" href="https://htmlacademy.ru"><img src=".//img/shape.svg" alt="html academy" /></a>
+
+            </div>
         </footer>
     </body>
 </main>
