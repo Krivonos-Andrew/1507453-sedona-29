@@ -453,7 +453,7 @@ img {
 }
 
 
-/**css для страницы каталога*/
+/**
 
 .grid-container {
     display: grid;
@@ -487,3 +487,5 @@ img {
 .rating {
     grid-area: rating;
 }
+
+css для страницы каталога*/
