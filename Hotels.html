@@ -15,54 +15,205 @@
         <header class="main-header">
             <nav class="main-navigation">
                 <div class="main-header-logo">
-                    <a class="logo" href="#"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" /></a>
+                    <a class="logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" /></a>
                 </div>
                 <div class="navigation-list">
-                    <div class="navigation-item"><a href="#">информация</a></div>
-                    <div class="navigation-item"><a href="#">фото и видео</a></div>
-                    <div class="navigation-item"><a href="#">Карта штата</a></div>
-                    <div class="navigation-item"><a href="#">Гостиницы</a></div>
+                    <div class="navigation-item"><a href="#">ИНФОРМАЦИЯ</a></div>
+                    <div class="navigation-item"><a href="#">ФОТО И ВИДЕО</a></div>
+                    <div class="navigation-item"><a href="#">КАРТА ШТАТА</a></div>
+                    <div class="navigation-item"><a href="#">ГОСТИНИЦЫ</a></div>
                 </div>
             </nav>
         </header>
         <main>
             <section class="conditions">
-                <div class="condition-list"></div>
-                <div class="condition-item">
-                    <span>
-                        <h3></h3>
-                    </span>
+                <div class="conditions-wrapper">
+                    <div class="conditions-infrastructure">
+                        <div class="conditions-list">
+                            <span class="cost-title">
+                                <h3>ИНФРАСТРУКТУРА:</h3>
+                            </span>
+                            <div class="conditions-box">
+                                <div class="condition-item">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-1">
+                                    <label class="checkbox-label" for="checkbox-1">БАССЕЙН</label>
+                                </div>
+                                <div class="condition-item">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-2">
+                                    <label class="checkbox-label" for="checkbox-2">ПАРКОВКА</label>
+                                </div>
+                                <div class="condition-item">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-3">
+                                    <label class="checkbox-label" for="checkbox-3">WI-FI</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conditions-list">
+                            <span class="cost-title">
+                                <h3>ТИП ЖИЛЬЯ:</h3>
+                            </span>
+                            <div class="conditions-box">
+                                <div class="condition-item">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-4">
+                                    <label class="checkbox-label" for="checkbox-4">
+                                        ГОСТИНИЦА</label>
+                                </div>
+                                <div class="condition-item">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-5">
+                                    <label class="checkbox-label" for="checkbox-5">МОТЕЛЬ</label>
+                                </div>
+                                <div class="condition-item">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-6">
+                                    <label class="checkbox-label" for="checkbox-6">АПАРТАМЕНТЫ</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cost">
+                            <span class="cost-title">
+                                <h3>СТОИМОСТЬ В СУТКИ (Р):</h3>
+                            </span>
+                            <div class="cost-view">
+                                <div class="min-cost">
+                                    ОТ 0
+                                </div>
+                                <div class="max-cost">
+                                    ДО 3000
+                                </div>
+                            </div>
+                            <div class="cost-select">
+                                <div class="cost-range"><input type="range" id="fader" min="0" max="3000" step="1" value="50"></div>
+                            </div>
+                            <div class="show-hotels">
+                                <a class="show-button" href="#">ПОКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="found-hotels">
+                <span class="found-title">
+                    <h2>НАЙДЕНО: 3</h2>
+                </span>
+                <span class="found-list">
+                    <p>СОРТИРОВКА:</p>
+                    <div class="found-items">
+                        <a href="#">ПО ЦЕНЕ</a>
+                        <a href="#">ПО ТИПУ</a>
+                        <a href="#">ПО РЕЙТИНГУ</a>
+                    </div>
+                </span>
+                <div class="scrolling">
+                    <button class="arrow">&#9650</button>
+                    <button class="arrow">&#9660</button>
                 </div>
             </section>
             <section class="card-hotels">
                 <div class="card-foto"><img src="img/layer_21.jpg" width="135" height="90" alt=""></div>
                 <div class="card-list">
-                    <span class="name">
-                        <h2>Amara Resort & Spa</h2>
-                    </span>
-                    <span class="type-hotels">
-                        <p>Гостиница</p>
-                    </span>
-                    <span class="price-hotels">
-                        <p>От 4000 Р.</p>
-                    </span>
-                    <div class="detailed">Подробнее</div>
-                    <div class="reserve">Забронировать</div>
-
+                    <a href="#">
+                        <span class="name">
+                            <h2>AMARA RESORT & SPA</h2>
+                        </span></a>
+                    <div class="card-list-item">
+                        <div class="card-list-info">
+                            <span class="type-hotels">
+                                <p>ГОСТИНИЦА</p>
+                            </span>
+                            <a href="#">
+                                <div class="detailed-button">ПОДРОБНЕЕ</div>
+                            </a>
+                        </div>
+                        <div class="card-list-price">
+                            <span class="price-hotels">
+                                <p>ОТ 4000 Р.</p>
+                            </span>
+                            <a href="#">
+                                <div class="reserve-button">ЗАБРОНИРОВАТЬ</div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-reating"></div>
-
+                <div class="card-reating">
+                    <div class="stars">&#9733 &#9733 &#9733 &#9733</div>
+                    <div class="ball-reating">
+                        <p class="ball-text">РЕЙТИНГ: 8,5</p>
+                    </div>
+                </div>
+            </section>
+            <section class="card-hotels">
+                <div class="card-foto"><img src="img/layer_89.jpg" width="135" height="90" alt=""></div>
+                <div class="card-list">
+                    <a href="#">
+                        <span class="name">
+                            <h2>DESERT QUAIL INN</h2>
+                        </span></a>
+                    <div class="card-list-item">
+                        <div class="card-list-info">
+                            <span class="type-hotels">
+                                <p>МОТЕЛЬ</p>
+                            </span>
+                            <a href="#">
+                                <div class="detailed-button">ПОДРОБНЕЕ</div>
+                            </a>
+                        </div>
+                        <div class="card-list-price">
+                            <span class="price-hotels">
+                                <p>ОТ 3000 Р.</p>
+                            </span>
+                            <a href="#">
+                                <div class="reserve-button">ЗАБРОНИРОВАТЬ</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-reating">
+                    <div class="stars">&#9733 &#9733 &#9733</div>
+                    <div class="ball-reating">
+                        <p class="ball-text">РЕЙТИНГ: 8,9</p>
+                    </div>
+                </div>
+            </section>
+            <section class="card-hotels">
+                <div class="card-foto"><img src="img/rectangle1.jpg" width="135" height="90" alt=""></div>
+                <div class="card-list">
+                    <a href="#">
+                        <span class="name">
+                            <h2>VILLAS AT POCO DIABLO</h2>
+                        </span></a>
+                    <div class="card-list-item">
+                        <div class="card-list-info">
+                            <span class="type-hotels">
+                                <p>АПАРТАМЕНТЫ</p>
+                            </span>
+                            <a href="#">
+                                <div class="detailed-button">ПОДРОБНЕЕ</div>
+                            </a>
+                        </div>
+                        <div class="card-list-price">
+                            <span class="price-hotels">
+                                <p>ОТ 2000 Р.</p>
+                            </span>
+                            <a href="#">
+                                <div class="reserve-button">ЗАБРОНИРОВАТЬ</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-reating">
+                    <div class="stars">&#9733 &#9733</div>
+                    <div class="ball-reating">
+                        <p class="ball-text">РЕЙТИНГ: 9,2</p>
+                    </div>
+                </div>
             </section>
         </main>
-        <!--      
-        <footer class="page-footer main-footer">
+        <footer class="page-footer main-footer footer-inner">
             <div class="contacts">
                 <div class="contact-text">
                     <h2>#VISITSEDONA</h2>
                 </div>
                 <a class="contacts-phone" href="tel+74956660166"> ТЕЛ: +7(495)666-01-66
                 </a>
-
             </div>
             <div class="social">
                 <ul class="social-menu">
@@ -82,10 +233,8 @@
             </div>
             <div class="link">
                 <img src="/img/website_by.svg" />
-                <a class="html-logo" href="https://htmlacademy.ru"><img src="/img/shape.svg" alt="html academy" /></a>
-
+                <a href="https://htmlacademy.ru"> <div class="html-logo"></div> </a>
             </div>
         </footer>
-          -->
     </div>
 </body></html>
