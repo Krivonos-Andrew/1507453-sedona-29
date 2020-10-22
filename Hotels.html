@@ -9,83 +9,199 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body class="page-body">
+<body class="page_body">
     <div class="container">
         <!--Header логотип и навигация-->
-        <header class="main-header">
-            <nav class="main-navigation">
-                <div class="main-header-logo">
-                    <a class="logo" href="#"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" /></a>
+        <header class="main_header">
+            <nav class="main_navigation">
+                <div class="main_header_logo">
+                    <a class="logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" /></a>
                 </div>
-                <div class="navigation-list">
-                    <div class="navigation-item"><a href="#">информация</a></div>
-                    <div class="navigation-item"><a href="#">фото и видео</a></div>
-                    <div class="navigation-item"><a href="#">Карта штата</a></div>
-                    <div class="navigation-item"><a href="#">Гостиницы</a></div>
+                <div class="navigation_list">
+                    <div class="navigation_item"><a href="#">ИНФОРМАЦИЯ</a></div>
+                    <div class="navigation_item"><a href="#">ФОТО И ВИДЕО</a></div>
+                    <div class="navigation_item"><a href="#">КАРТА ШТАТА</a></div>
+                    <div class="navigation_item"><a href="#">ГОСТИНИЦЫ</a></div>
                 </div>
             </nav>
         </header>
         <main>
             <section class="conditions">
-                <div class="condition-list"></div>
-                <div class="condition-item">
-                    <span>
-                        <h3></h3>
-                    </span>
+                <div class="conditions_wrapper">
+                    <div class="conditions_infrastructure">
+                        <div class="conditions_list">
+                            <h3 class="cost_title">ИНФРАСТРУКТУРА:</h3>
+                            <div class="conditions_box">
+                                <div class="condition_item">
+                                    <input class="checkbox_input" type="checkbox" id="checkbox-1">
+                                    <label class="checkbox_label" for="checkbox-1">БАССЕЙН</label>
+                                </div>
+                                <div class="condition_item">
+                                    <input class="checkbox_input" type="checkbox" id="checkbox-2">
+                                    <label class="checkbox_label" for="checkbox-2">ПАРКОВКА</label>
+                                </div>
+                                <div class="condition_item">
+                                    <input class="checkbox_input" type="checkbox" id="checkbox-3">
+                                    <label class="checkbox_label" for="checkbox-3">WI-FI</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conditions_list">
+                            <h3 class="cost_title">ТИП ЖИЛЬЯ:</h3>
+                            <div class="conditions_box">
+                                <div class="condition_item">
+                                    <input class="checkbox_input" type="checkbox" id="checkbox-4">
+                                    <label class="checkbox_label" for="checkbox-4">
+                                        ГОСТИНИЦА</label>
+                                </div>
+                                <div class="condition_item">
+                                    <input class="checkbox_input" type="checkbox" id="checkbox-5">
+                                    <label class="checkbox_label" for="checkbox-5">МОТЕЛЬ</label>
+                                </div>
+                                <div class="condition_item">
+                                    <input class="checkbox_input" type="checkbox" id="checkbox-6">
+                                    <label class="checkbox_label" for="checkbox-6">АПАРТАМЕНТЫ</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cost">
+                            <h3 class="cost_title">СТОИМОСТЬ В СУТКИ (Р):</h3>
+                            <div class="cost_view">
+                                <div class="min_cost">
+                                    ОТ 0
+                                </div>
+                                <div class="max_cost">
+                                    ДО 3000
+                                </div>
+                            </div>
+                            <div class="cost_select">
+                                <div class="cost_range"><input type="range" id="fader" min="0" max="3000" step="1" value="50"></div>
+                            </div>
+                            <div class="show_hotels">
+                                <a class="show_button" href="#">ПОКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="card-hotels">
-                <div class="card-foto"><img src="img/layer_21.jpg" width="135" height="90" alt=""></div>
-                <div class="card-list">
-                    <span class="name">
-                        <h2>Amara Resort & Spa</h2>
-                    </span>
-                    <span class="type-hotels">
-                        <p>Гостиница</p>
-                    </span>
-                    <span class="price-hotels">
-                        <p>От 4000 Р.</p>
-                    </span>
-                    <div class="detailed">Подробнее</div>
-                    <div class="reserve">Забронировать</div>
-
+            <section class="found_hotels">
+                <h2 class="found_title">НАЙДЕНО: 3</h2>
+                <div class="found_list">
+                    <p>СОРТИРОВКА:</p>
+                    <div class="found_items">
+                        <a href="#">ПО ЦЕНЕ</a>
+                        <a href="#">ПО ТИПУ</a>
+                        <a href="#">ПО РЕЙТИНГУ</a>
+                    </div>
                 </div>
-                <div class="card-reating"></div>
-
+                <div class="scrolling">
+                    <a class="arrow_up" href="#"></a>
+                    <a class="arrow_down" href="#"></a>
+                </div>
+            </section>
+            <section class="card_hotels">
+                <div class="card_foto"><img src="img/photo_hotels/amara_resort.jpg" width="135" height="90" alt=""></div>
+                <div class="card_list">
+                    <a class="name" href="#">
+                        <h2>AMARA RESORT & SPA</h2>
+                    </a>
+                    <div class="card_list_item">
+                        <div class="card_list_info">
+                            <p class="type_hotels">ГОСТИНИЦА</p>
+                            <a class="detailed_button" href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="card_list_price">
+                            <p class="price_hotels">ОТ 4000 Р.</p>
+                            <a class="reserve_button" href="#">ЗАБРОНИРОВАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_reating">
+                    <div class="stars amara"></div>
+                    <div class="ball_reating">
+                        <p class="ball_text">РЕЙТИНГ: 8,5</p>
+                    </div>
+                </div>
+            </section>
+            <section class="card_hotels">
+                <div class="card_foto"><img src="img/photo_hotels/desert_quail.jpg" width="135" height="90" alt=""></div>
+                <div class="card_list">
+                    <a class="name" href="#">
+                        <h2>DESERT QUAIL INN</h2>
+                    </a>
+                    <div class="card_list_item">
+                        <div class="card_list_info">
+                            <p class="type_hotels">МОТЕЛЬ</p>
+                            <a class="detailed_button" href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="card_list_price">
+                            <p class="price_hotels">ОТ 3000 Р.</p>
+                            <a class="reserve_button" href="#">ЗАБРОНИРОВАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_reating">
+                    <div class="stars desert"></div>
+                    <div class="ball_reating">
+                        <p class="ball_text">РЕЙТИНГ: 8,9</p>
+                    </div>
+                </div>
+            </section>
+            <section class="card_hotels">
+                <div class="card_foto"><img src="img/photo_hotels/villas_at_poco_diablo.jpg" width="135" height="90" alt=""></div>
+                <div class="card_list">
+                    <a class="name" href="#">
+                        <h2>VILLAS AT POCO DIABLO</h2>
+                    </a>
+                    <div class="card_list_item">
+                        <div class="card_list_info">
+                            <p class="type_hotels">АПАРТАМЕНТЫ</p>
+                            <a class="detailed_button" href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="card_list_price">
+                            <p class="price_hotels">ОТ 2000 Р.</p>
+                            <a class="reserve_button" href="#">ЗАБРОНИРОВАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_reating">
+                    <div class="stars villas"></div>
+                    <div class="ball_reating">
+                        <p class="ball_text">РЕЙТИНГ: 9,2</p>
+                    </div>
+                </div>
             </section>
         </main>
-        <!--      
-        <footer class="page-footer main-footer">
+        <footer class="page_footer main_footer footer_inner">
             <div class="contacts">
-                <div class="contact-text">
+                <div class="contact_text">
                     <h2>#VISITSEDONA</h2>
                 </div>
-                <a class="contacts-phone" href="tel+74956660166"> ТЕЛ: +7(495)666-01-66
+                <a class="contacts_phone" href="tel+74956660166"> ТЕЛ: +7(495)666-01-66
                 </a>
-
             </div>
             <div class="social">
-                <ul class="social-menu">
-                    <li class="social-item">
-                        <a href="#" class="social-link"><img src="img/twitter.svg" alt="Твиттер">
+                <ul class="social_menu">
+                    <li class="social_item">
+                        <a class="social_link" href="#" ><img src="img/twitter.svg" alt="Твиттер">
                         </a>
                     </li>
-                    <li class="social-item">
-                        <a href="#" class="social-link"><img src="img/fb-icon.svg" alt="Фейсбук">
+                    <li class="social_item">
+                        <a class="social_link" href="#" ><img src="img/facebook.svg" alt="Фейсбук">
                         </a>
                     </li>
-                    <li class="social-item">
-                        <a href="#" class="social-link"><img src="img/youtube.svg" alt="Youtube">
+                    <li class="social_item">
+                        <a class="social_link" href="#" ><img src="img/youtube.svg" alt="Youtube">
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="link">
                 <img src="/img/website_by.svg" />
-                <a class="html-logo" href="https://htmlacademy.ru"><img src="/img/shape.svg" alt="html academy" /></a>
-
+                <a href="https://htmlacademy.ru">
+                    <div class="html_logo"></div>
+                </a>
             </div>
         </footer>
-          -->
     </div>
 </body></html>
