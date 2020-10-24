@@ -40,22 +40,25 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 .page {
     height: 100%;
 }
 
 .page_body {
     min-height: 100%;
+    background: #F2F2F2;
 }
 
 .container {
-    display: grid;
-    margin: 0 auto;
     width: 1200px;
-    box-shadow: 0 5px 15px 40px rgba(0, 1, 1, 0.2), 0 00 40px rgba(0, 1, 1, 0.2);
-
+    margin: 0 auto;
+    display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
+    background: #fff;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2), 0 00 40px rgba(0, 1, 1, 0.2);
+
 }
 
 
@@ -67,7 +70,7 @@ img {
 .main_navigation {
     padding: 0 72px;
     position: relative;
-   
+
 }
 
 .main_header_logo {
@@ -127,9 +130,11 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
 }
-.title{
+
+.title {
     height: 216px;
-   }
+}
+
 .mask {
     width: 1200px;
     height: 272px;
@@ -139,38 +144,42 @@ img {
     flex-direction: column;
     justify-content: space-between;
     background-image: url("../img/group-1.svg");
-            
+
 }
 
-.mask h2{
+.mask h2 {
     margin: 0;
     padding-top: 98px;
 }
-.mask p{
+
+.mask p {
     margin: 0;
     padding-bottom: 51px;
-    
+
 }
+
 .features_blue {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     color: var(--basic-white);
     background-color: var(--basic-Light-Blue);
 
 }
-.features_blue_item{
+
+.features_blue_item {
     margin: 0;
-    padding: 0 50px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
     justify-content: center;
-    
+
 }
 
 .services {
     padding: 55px 65px 82px 73px;
-    
+
 }
 
 .services_list {
@@ -180,44 +189,47 @@ img {
     justify-content: space-between;
     list-style: none;
 }
-.services_
 
-.services_item h2{
+.services_ .services_item h2 {
     margin: 0;
-    padding-top: 30px; 
+    padding-top: 30px;
 }
+
 .services_item p {
     margin: 0;
     padding-top: 25px;
-    
+
 }
-.features_gray{
- padding: 47px 77px 54px 96px;
+
+.features_gray {
+    padding: 47px 77px 54px 96px;
     background: #EEEEEE;
 }
 
-.gray{
+.gray {
     padding: 0;
 }
-.gray h2{
+
+.gray h2 {
     padding: 0;
 }
+
 .title2 {
     height: 205px;
     display: flex;
     flex-direction: column;
-    }
+}
 
 .title2 h2 {
     padding: 58px 0 47px 0;
     font-size: 30px;
 }
 
-.title2 p{
+.title2 p {
     margin: 0;
-    line-height: 24px 
-    
+    line-height: 24px
 }
+
 .map {
     margin: 0;
     margin-top: 86px;
