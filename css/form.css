@@ -1,0 +1,263 @@
+html{
+  box-sizing: border-box;
+}
+*{
+  box-sizing: inherit;
+}
+.wrapper{
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+}
+.btn{
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  border: 2px solid darkcyan;
+  padding: 10px 30px;
+  color: darkcyan;
+  text-transform: uppercase;
+  font-family: arial;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.btn:hover{
+  background-color: darkcyan;
+  color: white;
+}
+
+.popup{
+  display: block;
+  width: 260px;
+  background-color: darkcyan;
+  padding: 30px;
+  text-transform: uppercase;
+  font-family: arial;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -999px;
+  transition: .5s all linear;
+}
+
+.popup input{
+  width: 100%;
+  border: 0;
+  margin: 10px 0;
+  height: 35px;
+  padding: 5px;
+  outline: none;
+}
+
+.submit{
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#callback{
+  display: none;
+}
+
+#callback:checked ~ .popup{
+  top: 200px;
+}
+
+.close{
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  font-size: 24px;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+.hotels {
+    width: 1200px;
+    height: 86px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 99;
+}
+
+.search_hotels {
+    width: 568px;
+}
+
+.choice {
+    width: 458px;
+    height: 172px;
+    padding: 55px 55px 0 55px;
+    display: flex;
+    flex-direction: column;
+    background: var(--basic-white);
+}
+
+.date_of_arrival {
+    display: flex;
+    align-content: center;
+    height: 38px;
+}
+
+.date_text {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.date1 {
+    width: 343px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F2F2F2;
+}
+
+.date1 p {
+    padding-left: 14px;
+}
+
+.calendar {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.date_of_departure {
+    margin-top: 30px;
+    height: 38px;
+    display: flex;
+    align-content: center;
+}
+
+.date2 {
+    width: 343px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F2F2F2;
+}
+
+.date2 p {
+    margin-left: 14px;
+}
+
+.mature_children {
+    margin-top: 30px;
+    height: 38px;
+    display: flex;
+    align-content: center;
+}
+
+.mature {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.mature_children_text {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.children {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.children p {
+    padding-left: 53px;
+}
+
+.counter {
+    width: 114px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    background: #F2F2F2;
+}
+
+.search_button {
+    width: 100%;
+    height: 86px;
+    background: #766357;
+    border: none;
+    outline: 0;
+    border: none;
+}
+
+.search_item {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    align-items: center;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-white);
+}
+
+.search_button:hover {
+    background: #604E43;
+}
+
+.search_button:active {
+    background: #503E33;
+}
+
+.search_item:active {
+    opacity: 0.3;
+}
+
+.find {
+    height: 167px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background: var(--basic-white);
+}
+
+.find_button {
+    border: none;
+    width: 458px;
+    height: 58px;
+    background: #81B3D2;
+    outline: 0;
+}
+
+.find_item {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-white);
+    display: grid;
+    align-items: center;
+}
+
+.find_button:hover {
+    background: #669EC0
+}
+
+.find_button:active .find_item:active {
+    background: #5496BD;
+    opacity: 0.3;
+}
