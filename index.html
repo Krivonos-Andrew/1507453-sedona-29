@@ -127,60 +127,44 @@
             </div>
             <!--Форма поиска отеля-->
             <section class="hotels">
-                <div class="search_hotels">
-                    <button class="search_button">
-                        <p class="search_item">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p>
-                    </button>
-                    <div class="choice">
-                        <div class="date_of_arrival">
-                            <div class="date_text">
-                                <p>ДАТА ЗАЕЗДА:</p>
-                            </div>
-                            <div class="date_input">
-                                <p>27 АПРЕЛЯ 2017</p>
-                                <button class="calendar_button">
-                                    <div class="calendar"></div>
-                                </button>
-
-                            </div>
-                        </div>
-                        <div class="date_of_departure">
-                            <div class="date_text">
-                                <p>ДАТА ВЫЕЗДА:</p>
-                            </div>
-                            <div class="date_input">
-                                <p>4 июля 2018</p>
-                                <button class="calendar_button">
-                                    <div class="calendar"></div>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="mature_children">
-                            <div class="mature">
-                                <div class="mature_children_text">
-                                    <p>ВЗРОСЛЫЕ:</p>
-                                </div>
-                                <div class="counter"><button class="button_minus"></button>
-                                    <span class="output">2</span>
-                                    <button class="button_plus"></button>
-                                </div>
-                            </div>
-                            <div class="children">
-                                <p>ДЕТИ:</p>
-                                <div class="counter"><button class="button_minus">
-                                    </button>
-                                    <span class="output">0</span>
-                                    <button class="button_plus"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="find">
-                        <a class="find_button">
-                            <p class="find_item">НАЙТИ</p>
-                        </a>
-                    </div>
+             <div class="wrapper"><input type="checkbox" checked id="callback">
+        <label class="btn_searsh" for="callback">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</label>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="popup">
+            <label class="date_of_arrival">
+                <span>ДАТА ЗАЕЗДА:</span>
+                <div class="input_date"><input type="text" name="ДАТА ЗАЕЗДА:" class="date" placeholder="24 АПРЕЛЯ 2017">
+                    <button class="calendar"></button>
                 </div>
+            </label>
+            <label class="date_of_departure">
+                <span>ДАТА ВЫЕЗДА:</span>
+                <div class="input_date">
+                    <input type="text" name="ДАТА ВЫЕЗДА:" class="date" placeholder="4 ИЮЛЯ 2017">
+                    <button class="calendar"></button>
+                </div>
+            </label>
+            <div class="guests">
+                <label class="mature">
+                    <span>ВЗРОСЛЫЕ:</span>
+                    <div class="quantity_inner">
+                        <button class="bt_minus"></button>
+                        <input type="text" name="ВЗРОСЛЫЕ:" class="quantity" value="1" data-max-count="20">
+                        <button class="bt_plus"></button>
+                    </div>
+                </label>
+                <label class="children">
+                    <span>ДЕТИ:</span>
+                    <div class="quantity_inner">
+                        <button class="bt_minus"></button>
+                        <input type="text" name="ДЕТИ:" class="quantity" value="0" data-max-count="20">
+                        <button class="bt_plus"></button>
+                    </div>
+                </label>
+            </div>
+            <label><button class="submit">НАЙТИ</button></label>
+            <label class="close" for="callback"></label>
+        </form></div>
+
             </section>
             <!--Карта проезда-->
             <figure class="map">
