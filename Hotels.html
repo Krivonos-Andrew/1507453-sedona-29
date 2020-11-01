@@ -14,9 +14,7 @@
         <!--Header логотип и навигация-->
         <header class="main_header">
             <nav class="main_navigation">
-                <div class="main_header_logo">
-                    <a class="logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" /></a>
-                </div>
+                <a href="index.html" class="logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" /></a>
                 <div class="navigation_list">
                     <a href="#" class="navigation_item">ИНФОРМАЦИЯ</a>
                     <a href="#" class="navigation_item">ФОТО И ВИДЕО</a>
@@ -28,20 +26,20 @@
         <main>
             <section class="conditions">
                 <div class="conditions_wrapper">
-                    <div class="conditions_infrastructure">
+                    <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="conditions_infrastructure">
                         <div class="conditions_list">
                             <h3 class="cost_title">ИНФРАСТРУКТУРА:</h3>
                             <div class="conditions_box">
                                 <div class="condition_item">
-                                    <input class="checkbox_input" type="checkbox" id="checkbox-1">
+                                    <input name="ИНФРАСТРУКТУРА[]" value="БАССЕЙН" class="checkbox_input" type="checkbox" id="checkbox-1" checked>
                                     <label class="checkbox_label" for="checkbox-1">БАССЕЙН</label>
                                 </div>
                                 <div class="condition_item">
-                                    <input class="checkbox_input" type="checkbox" id="checkbox-2">
+                                    <input name="ИНФРАСТРУКТУРА[]" value="ПАРКОВКА" class="checkbox_input" type="checkbox" id="checkbox-2">
                                     <label class="checkbox_label" for="checkbox-2">ПАРКОВКА</label>
                                 </div>
                                 <div class="condition_item">
-                                    <input class="checkbox_input" type="checkbox" id="checkbox-3">
+                                    <input name="ИНФРАСТРУКТУРА[]" value="WI-FI" class="checkbox_input" type="checkbox" id="checkbox-3">
                                     <label class="checkbox_label" for="checkbox-3">WI-FI</label>
                                 </div>
                             </div>
@@ -50,16 +48,15 @@
                             <h3 class="cost_title">ТИП ЖИЛЬЯ:</h3>
                             <div class="conditions_box">
                                 <div class="condition_item">
-                                    <input class="checkbox_input" type="checkbox" id="checkbox-4">
-                                    <label class="checkbox_label" for="checkbox-4">
-                                        ГОСТИНИЦА</label>
+                                    <input name="ТИП ЖИЛЬЯ[]" value="ГОСТИНИЦА" class="checkbox_input" type="checkbox" id="checkbox-4" checked>
+                                    <label class="checkbox_label" for="checkbox-4">ГОСТИНИЦА</label>
                                 </div>
                                 <div class="condition_item">
-                                    <input class="checkbox_input" type="checkbox" id="checkbox-5">
+                                    <input name="ТИП ЖИЛЬЯ[]" value="МОТЕЛЬ" class="checkbox_input" type="checkbox" id="checkbox-5" checked>
                                     <label class="checkbox_label" for="checkbox-5">МОТЕЛЬ</label>
                                 </div>
                                 <div class="condition_item">
-                                    <input class="checkbox_input" type="checkbox" id="checkbox-6">
+                                    <input name="ТИП ЖИЛЬЯ[]" value="АПАРТАМЕНТЫ" class="checkbox_input" type="checkbox" id="checkbox-6" checked>
                                     <label class="checkbox_label" for="checkbox-6">АПАРТАМЕНТЫ</label>
                                 </div>
                             </div>
@@ -68,20 +65,23 @@
                             <h3 class="cost_title">СТОИМОСТЬ В СУТКИ (Р):</h3>
                             <div class="cost_view">
                                 <div class="min_cost">
-                                    ОТ 0
+                                    <span>ОТ</span>
+                                    <output for="fader" id="volume"></output>
                                 </div>
                                 <div class="max_cost">
-                                    ДО 3000
+                                    <span>ДО</span>
+                                    <output for="fader" id="myInput"></output>
                                 </div>
                             </div>
-                            <div class="cost_select">
-                                <div class="cost_range"><input type="range" id="fader" min="0" max="3000" step="1" value="50"></div>
+                            <div class="price_selection">
+                                <input name="ЦЕНА ОТ" type="range" min="0" step="50" max="3000" value="50" oninput="outputUpdate(value)">
+                                <input name="ЦЕНА ДО" type="range" min="0" step="50" max="3000" value="1000" oninput="outputUpdate(value)">
                             </div>
                             <div class="show_hotels">
-                                <a class="show_button" href="#">ПОКАЗАТЬ</a>
+                                <button type="submit" class="show_button">ПОКАЗАТЬ</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </section>
             <section class="found_hotels">
@@ -100,7 +100,7 @@
                 </div>
             </section>
             <section class="card_hotels">
-                <div class="card_foto"><img src="img/photo_hotels/amara_resort.jpg" width="135" height="90" alt=""></div>
+                <div class="card_foto"><img src="img/photo_hotels/amara_resort.jpg" width="135" height="90" alt="ГОСТИНИЦА AMARA RESORT"></div>
                 <div class="card_list">
                     <a href="#" class="name">
                         <h2>AMARA RESORT & SPA</h2>
@@ -124,7 +124,7 @@
                 </div>
             </section>
             <section class="card_hotels">
-                <div class="card_foto"><img src="img/photo_hotels/desert_quail.jpg" width="135" height="90" alt=""></div>
+                <div class="card_foto"><img src="img/photo_hotels/desert_quail.jpg" width="135" height="90" alt="МОТЕЛЬ DESERT QUAIL INN"></div>
                 <div class="card_list">
                     <a href="#" class="name">
                         <h2>DESERT QUAIL INN</h2>
@@ -148,7 +148,7 @@
                 </div>
             </section>
             <section class="card_hotels">
-                <div class="card_foto"><img src="img/photo_hotels/villas_at_poco_diablo.jpg" width="135" height="90" alt=""></div>
+                <div class="card_foto"><img src="img/photo_hotels/villas_at_poco_diablo.jpg" width="135" height="90" alt="АПАРТАМЕНТЫ VILLAS AT POCO DIABLO"></div>
                 <div class="card_list">
                     <a href="#" class="name">
                         <h2>VILLAS AT POCO DIABLO</h2>
@@ -183,15 +183,18 @@
             <div class="social">
                 <ul class="social_menu">
                     <li class="social_item">
-                        <a href="#" class="social_link twitter"><!-- МЫ В ТВИТТЕР-->
+                        <a href="#" class="social_link twitter">
+                            <!-- МЫ В ТВИТТЕР-->
                         </a>
                     </li>
                     <li class="social_item">
-                        <a href="#" class="social_link facebook"><!-- МЫ В ФЕЙСБУК-->
+                        <a href="#" class="social_link facebook">
+                            <!-- МЫ В ФЕЙСБУК-->
                         </a>
                     </li>
                     <li class="social_item">
-                        <a href="#" class="social_link youtube"><!-- МЫ НА ЮТУБ-->
+                        <a href="#" class="social_link youtube">
+                            <!-- МЫ НА ЮТУБ-->
                         </a>
                     </li>
                 </ul>
@@ -202,4 +205,17 @@
             </div>
         </footer>
     </div>
-</body></html>
+    <script type="text/javascript">
+        function outputUpdate(vol) {
+            var output = document.querySelector('#volume');
+            output.value = vol;
+            output.style.left = vol - 20 + 'px';
+            if (output.value > 9) {
+                output.style.left = vol - 30 + 'px';
+            }
+
+    </script>
+
+</body>
+
+</html>
