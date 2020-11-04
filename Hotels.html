@@ -27,8 +27,8 @@
             <section class="conditions">
                 <div class="conditions_wrapper">
                     <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="conditions_infrastructure">
-                        <div class="conditions_list">
-                            <h3 class="cost_title">ИНФРАСТРУКТУРА:</h3>
+                        <fieldset class="conditions_list">
+                            <legend align="left" class="cost_title">ИНФРАСТРУКТУРА:</legend>
                             <div class="conditions_box">
                                 <div class="condition_item">
                                     <input name="ИНФРАСТРУКТУРА[]" value="БАССЕЙН" class="checkbox_input" type="checkbox" id="checkbox-1" checked>
@@ -43,9 +43,9 @@
                                     <label class="checkbox_label" for="checkbox-3">WI-FI</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="conditions_list">
-                            <h3 class="cost_title">ТИП ЖИЛЬЯ:</h3>
+                        </fieldset>
+                        <fieldset class="conditions_list">
+                            <legend align="left" class="cost_title">ТИП ЖИЛЬЯ:</legend>
                             <div class="conditions_box">
                                 <div class="condition_item">
                                     <input name="ТИП ЖИЛЬЯ[]" value="ГОСТИНИЦА" class="checkbox_input" type="checkbox" id="checkbox-4" checked>
@@ -60,22 +60,17 @@
                                     <label class="checkbox_label" for="checkbox-6">АПАРТАМЕНТЫ</label>
                                 </div>
                             </div>
-                        </div>
+                        </fieldset>
                         <div class="cost">
                             <h3 class="cost_title">СТОИМОСТЬ В СУТКИ (Р):</h3>
                             <div class="cost_view">
-                                <div class="min_cost">
-                                    <span>ОТ</span>
-                                    <output for="fader" id="volume"></output>
-                                </div>
-                                <div class="max_cost">
-                                    <span>ДО</span>
-                                    <output for="fader" id="myInput"></output>
-                                </div>
+                                <label class="min_cost"><span>ОТ</span><input type="text" name="ЦЕНА ОТ" value="" placeholder="0" class="cost_select"></label>
+                                <label class="max_cost"><span>ДО</span><input type="text" name="ЦЕНА ДО" value="" placeholder="3000" class="cost_select"></label>
                             </div>
-                            <div class="price_selection">
-                                <input name="ЦЕНА ОТ" type="range" min="0" step="50" max="3000" value="50" oninput="outputUpdate(value)">
-                                <input name="ЦЕНА ДО" type="range" min="0" step="50" max="3000" value="1000" oninput="outputUpdate(value)">
+                            <div type="range" class="price_selection">
+                                <div class="range_line"></div>
+                                <span class="filter_button min"></span>
+                                <span class="filter_button max"></span>
                             </div>
                             <div class="show_hotels">
                                 <button type="submit" class="show_button">ПОКАЗАТЬ</button>
@@ -205,17 +200,4 @@
             </div>
         </footer>
     </div>
-    <script type="text/javascript">
-        function outputUpdate(vol) {
-            var output = document.querySelector('#volume');
-            output.value = vol;
-            output.style.left = vol - 20 + 'px';
-            if (output.value > 9) {
-                output.style.left = vol - 30 + 'px';
-            }
-
-    </script>
-
-</body>
-
-</html>
+</body></html>

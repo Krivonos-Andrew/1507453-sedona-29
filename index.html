@@ -125,37 +125,37 @@
             </div>
             <!--Форма поиска отеля-->
             <section class="hotels">
-                <div class="wrapper"><input type="checkbox" checked id="callback">
-                    <label class="btn_searsh" for="callback">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</label>
-                    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="popup">
+                <div class="wrapper">
+                    <a href="#popup" class="btn_searsh btn_close" >ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+                    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" id="popup" class="popup" >
                         <label class="date_of_arrival">
                             <span>ДАТА ЗАЕЗДА:</span>
                             <div class="input_date"><input type="text" name="ДАТА ЗАЕЗДА:" class="date" placeholder="24 АПРЕЛЯ 2017">
-                                <button class="calendar"></button>
+                                <button type="button" class="calendar"></button>
                             </div>
                         </label>
                         <label class="date_of_departure">
                             <span>ДАТА ВЫЕЗДА:</span>
                             <div class="input_date">
                                 <input type="text" name="ДАТА ВЫЕЗДА:" class="date" placeholder="4 ИЮЛЯ 2017">
-                                <button class="calendar"></button>
+                                <button type="button" class="calendar"></button>
                             </div>
                         </label>
                         <div class="guests">
                             <label class="mature">
                                 <span>ВЗРОСЛЫЕ:</span>
                                 <div class="quantity_inner">
-                                    <button class="bt_minus"></button>
+                                    <span class="bt_minus"></span>
                                     <input type="text" name="ВЗРОСЛЫЕ:" class="quantity" value="1" data-max-count="20">
-                                    <button class="bt_plus"></button>
+                                    <span class="bt_plus"></span>
                                 </div>
                             </label>
                             <label class="children">
                                 <span>ДЕТИ:</span>
                                 <div class="quantity_inner">
-                                    <button class="bt_minus"></button>
+                                    <span class="bt_minus"></span>
                                     <input type="text" name="ДЕТИ:" class="quantity" value="0" data-max-count="20">
-                                    <button class="bt_plus"></button>
+                                    <span class="bt_plus"></span>
                                 </div>
                             </label>
                         </div>
@@ -163,10 +163,9 @@
                         <label class="close" for="callback"></label>
                     </form>
                 </div>
-
             </section>
             <!--Карта проезда-->
-            <figure class="map">
+            <figure  id="#map" class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52384.519357695935!2d-111.83218921830571!3d34.85541170327709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1602139940800!5m2!1sru!2sru" width="1200" height="594" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </figure>
         </main>
@@ -204,4 +203,7 @@
             </div>
         </footer>
     </div>
-</body></html>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
