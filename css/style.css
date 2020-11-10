@@ -29,16 +29,6 @@
     line-height: 21px;
 }
 
-h1,
-h2,
-h3 {
-    margin: 0;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 21px;
-}
 
 a {
     color: var(--basic-black);
@@ -99,16 +89,25 @@ img {
 }
 
 .navigation_list {
+    margin: 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .navigation_item {
     width: 227px;
     padding: 18px 0;
+
+}
+
+.navigation_item a {
+    text-decoration: none;
+
 }
 
 .navigation_item:nth-child(4n-3) {
@@ -128,16 +127,16 @@ img {
     text-align-last: right;
 }
 
-.navigation_item:hover {
+.navigation_item a:hover {
     color: var(--basic-light-blue);
 }
 
-.navigation_item:active {
+.navigation_item a:active {
     color: var(--basic-black);
     opacity: 0.3;
 }
 
-.item_active {
+.item_active a {
     color: var(--basic-light-brown);
 }
 
@@ -157,8 +156,8 @@ img {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background: url("../img/background_photo.jpg"), -webkit-gradient(linear, left top, right bottom, from(#E2EFF7), color-stop(#263943), to(#84636D));
-    background: url("../img/background_photo.jpg"), linear-gradient(to bottom right, #E2EFF7, #263943, #84636D);
+    background: url("../img/background-photo.jpg"), -webkit-gradient(linear, left top, right bottom, from(#E2EFF7), color-stop(#263943), to(#84636D));
+    background: url("../img/background-photo.jpg"), linear-gradient(to bottom right, #E2EFF7, #263943, #84636D);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -234,6 +233,10 @@ img {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.features_blue_item h2 {
+    margin: 0;
 }
 
 .features_blue_item p {
@@ -322,6 +325,7 @@ img {
 }
 
 .title2 h2 {
+    margin: 0;
     padding: 58px 0 34px 0;
     font-size: 30px;
 }
@@ -360,7 +364,6 @@ img {
 }
 
 .contacts {
-    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -379,9 +382,10 @@ img {
 }
 
 .contact_text {
-    padding-top: 23px;
-    padding-bottom: 15px;
+    margin-bottom: -2px;
+    padding-top: 5px;
     padding-left: 70px;
+    font-size: 14px;
 }
 
 .contact_phone {
@@ -875,10 +879,12 @@ html {
 /*Checkbox*/
 
 .conditions_list {
+    height: 190px;
     font-size: 15px;
     letter-spacing: 0.08ex;
     text-align: left;
     border: 0 none;
+    overflow: auto;
 }
 
 .cost_title {
@@ -982,6 +988,7 @@ html {
 }
 
 .cost h3 {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1147,6 +1154,7 @@ html {
 
 .found_title {
     width: 135px;
+    margin: 0;
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
@@ -1160,9 +1168,7 @@ html {
     align-items: center;
 }
 
-.found_title h2 {
-    margin: 0;
-}
+
 
 .found_list {
     height: -webkit-min-content;
@@ -1203,24 +1209,33 @@ html {
     align-items: center;
 }
 
+.found_items_active {
+    color: var(--basic-light-blue);
+    text-decoration: none;
+        
+}
 .found_items a {
     padding-right: 32px;
     color: rgba(0, 0, 0, 0.3);
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted var(--basic-light-blue);
 }
+
 
 .found_items a:hover {
     color: var(--basic-light-blue);
-    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
 }
 
 .found_items a:focus {
-    border: none;
-    outline: none;
     color: var(--basic-light-blue);
+    text-decoration: none;
 }
 
 .found_items a:active {
     color: var(--basic-black);
+    text-decoration: none;
 }
 
 .scrolling {
@@ -1245,7 +1260,7 @@ html {
     height: 11px;
     margin-bottom: 4px;
     padding-right: 25px;
-    background-image: url("../img/arrows/arrow_up.svg");
+    background-image: url("../img/arrows/arrow-up.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -1254,7 +1269,7 @@ html {
     width: 11px;
     height: 11px;
     margin-bottom: 4px;
-    background-image: url("../img/arrows/arrow_down.svg");
+    background-image: url("../img/arrows/arrow-down.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -1263,7 +1278,7 @@ html {
     width: 11px;
     height: 11px;
     padding-right: 25px;
-    background-image: url("../img/arrows/arrow_up_hover.svg");
+    background-image: url("../img/arrows/arrow-up-hover.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -1272,7 +1287,7 @@ html {
     width: 11px;
     height: 11px;
     padding-right: 25px;
-    background-image: url("../img/arrows/arrow_up_active.svg");
+    background-image: url("../img/arrows/arrow-up-active.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -1281,7 +1296,7 @@ html {
     width: 11px;
     height: 11px;
     padding-right: 25px;
-    background-image: url("../img/arrows/arrow_up_active.svg");
+    background-image: url("../img/arrows/arrow-up-active.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -1289,7 +1304,7 @@ html {
 .arrow_down:hover {
     width: 11px;
     height: 11px;
-    background-image: url("../img/arrows/arrow_down_hover.svg");
+    background-image: url("../img/arrows/arrow-down-hover.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -1297,7 +1312,7 @@ html {
 .arrow_down:active {
     width: 11px;
     height: 11px;
-    background-image: url("../img/arrows/arrow_down_active.svg");
+    background-image: url("../img/arrows/arrow-down-active.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -1305,7 +1320,7 @@ html {
 .arrow_down:focus {
     width: 11px;
     height: 11px;
-    background-image: url("../img/arrows/arrow_down_active.svg");
+    background-image: url("../img/arrows/arrow-down-active.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -1321,6 +1336,7 @@ html {
     border-style: solid;
     border-color: var(--basic-special);
     border-top: none;
+    overflow: auto;
 }
 
 .card_foto {
@@ -1353,6 +1369,7 @@ html {
 }
 
 .card_hotels h2 {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1412,12 +1429,14 @@ html {
 .detailed_button:active {
     background: var(--basic-dark-blue);
     color: rgba(255, 255, 255, 0.3);
+
+
 }
 
 .reserve_button {
     width: 142px;
     height: 27px;
-    margin-top: 15px;
+    margin-top: 17px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
